@@ -17,7 +17,7 @@ export const authInterceptor: HttpInterceptorFn = (
   const token = authService.getToken();
 
   if (token) {
-    console.log('🔐 AuthInterceptor: Token found, attaching to request');
+    console.log(' AuthInterceptor: Token found, attaching to request');
     const authReq = req.clone({
       setHeaders: {
         Authorization: `Bearer ${token}`
@@ -26,6 +26,6 @@ export const authInterceptor: HttpInterceptorFn = (
     return next(authReq);
   }
 
-  console.warn('⚠️ AuthInterceptor: No token found in localStorage');
+  console.warn(' AuthInterceptor: No token found in localStorage');
   return next(req);
 };

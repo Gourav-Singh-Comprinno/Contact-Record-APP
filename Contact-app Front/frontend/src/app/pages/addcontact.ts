@@ -57,7 +57,7 @@ import { ContactService, Contact } from '../services/contactservice';
             </span>
           </div>
 
-          <!-- EMAIL FIELD -->
+         
           <div class="form-group">
             <label>Email *</label>
             <input
@@ -75,7 +75,7 @@ import { ContactService, Contact } from '../services/contactservice';
             </span>
           </div>
 
-          <!-- PHONE FIELD -->
+        
           <div class="form-group">
             <label>Phone Number *</label>
             <input
@@ -93,7 +93,7 @@ import { ContactService, Contact } from '../services/contactservice';
             </span>
           </div>
 
-          <!-- FORM ACTIONS -->
+         
           <div class="form-actions">
             <button
               type="button"
@@ -198,7 +198,7 @@ import { ContactService, Contact } from '../services/contactservice';
       margin: 0;
     }
 
-    /* FORM CONTENT */
+
     .form-content {
       display: flex;
       flex-direction: column;

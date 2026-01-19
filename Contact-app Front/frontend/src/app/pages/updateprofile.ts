@@ -378,7 +378,7 @@ export class UpdateProfileComponent implements OnInit {
 
     this.authService.updateProfile(updateData).subscribe({
       next: (response) => {
-        console.log('Profile updated successfully:', response);
+        console.log('Profile updated successfully:');
         
    
         const updatedUser = {

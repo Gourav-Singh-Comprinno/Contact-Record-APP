@@ -834,7 +834,6 @@ export class DashboardComponent implements OnInit {
   loading = true;
   showLogoutModal = false;
 
-  // Pagination properties
   currentPage = 1;
   pageSize = 10;
   totalPages = 0;
@@ -885,7 +884,7 @@ export class DashboardComponent implements OnInit {
         console.log(' Change detection triggered');
       },
       error: err => {
-        console.error('❌ Error loading contacts:', err);
+        console.error(' Error loading contacts:', err);
         this.loading = false;
         this.cdr.detectChanges();
       }

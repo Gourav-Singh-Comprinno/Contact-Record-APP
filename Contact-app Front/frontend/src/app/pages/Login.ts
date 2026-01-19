@@ -116,7 +116,7 @@ export class LoginComponent {
       .subscribe({
         
         next: (token: string) => {
-          console.log('Login response:', token);
+          
 
 
           if (!token || token.trim() === '' || token.includes('Exception') || token.includes('Error')) {
