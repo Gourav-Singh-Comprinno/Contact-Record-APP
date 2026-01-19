@@ -9,7 +9,7 @@ The application allows users to register, login, and manage their personal conta
  ## Project Structure 
 
  There are two folders in CONTACT RECORD APP
- - backend -> Backend is buil using Spring boot.
+ - backend -> Backend is built using Spring boot.
  - Contact-app Front -> frontend -> Frontend is built using Angular 
 
  ## Technology Stack 
@@ -44,7 +44,6 @@ Swagger (OpenAPI 3.0) is used for API documentation and API testing.
 
 Swagger UI URL:
 http://localhost:8081/swagger-ui/index.html
- like this 
 
 ## Installation and Setup
 
@@ -63,7 +62,7 @@ http://localhost:8081/swagger-ui/index.html
 
 ### Frontend Setup
 1. Navigate to frontend folder
-   cd 'Contact-app Front'
+   cd 'Contact-app Front' and then 
    cd frontend
 2. Install dependencies
    npm install
