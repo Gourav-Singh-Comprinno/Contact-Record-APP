@@ -120,7 +120,7 @@ import { AuthService } from '../services/authservice';
               class="contact-card"
               *ngFor="let c of paginatedContacts; trackBy: trackById">
 
-              <div class="contact-avatar">{{ c.name?.charAt(0)?.toUpperCase() || 'C' }}</div>
+              <div class="contact-avatar">{{ c.name.charAt(0).toUpperCase() || 'C' }}</div>
 
               <div class="contact-info">
                 <h6 class="contact-name">{{ c.name }}</h6>

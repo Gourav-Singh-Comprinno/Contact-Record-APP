@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { NavbarComponent } from './components/navbar';
-import { HeroComponent } from './components/hero';
 import { FooterComponent } from './components/fotter';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs/operators';
@@ -12,7 +11,6 @@ import { filter } from 'rxjs/operators';
   imports: [
     RouterOutlet,
     NavbarComponent ,
-    HeroComponent,
     FooterComponent,
     CommonModule
   ],
