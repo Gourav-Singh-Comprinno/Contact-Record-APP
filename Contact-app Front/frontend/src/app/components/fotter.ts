@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
       <div class="container py-4">
         <div class="row align-items-center">
 
-          <!-- Left -->
+        
           <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
             <span class="brand">Contact App</span>
             <span class="text-muted ms-2">
@@ -18,7 +18,7 @@ import { RouterLink } from '@angular/router';
             </span>
           </div>
 
-          <!-- Right -->
+         
           <div class="col-md-6 text-center text-md-end">
             <a routerLink="/login" class="footer-link">Login</a>
             <a routerLink="/register" class="footer-link">Register</a>

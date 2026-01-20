@@ -22,18 +22,18 @@ import { ContactService, Contact } from '../services/contactservice';
           <p class="form-subtitle">{{ editId ? 'Update contact information' : 'Create a new contact' }}</p>
         </div>
 
-        <!-- ERROR ALERT -->
+       
         <div *ngIf="errorMessage" class="alert alert-error">
-          <span class="alert-icon">❌</span>
+          <span class="alert-icon"></span>
           <div>
             <strong>Error</strong>
             <p>{{ errorMessage }}</p>
           </div>
         </div>
 
-        <!-- SUCCESS ALERT -->
+        
         <div *ngIf="successMessage" class="alert alert-success">
-          <span class="alert-icon">✅</span>
+          <span class="alert-icon"></span>
           <div>
             <strong>Success</strong>
             <p>{{ successMessage }}</p>
@@ -42,7 +42,7 @@ import { ContactService, Contact } from '../services/contactservice';
 
         <form class="form-content">
 
-          <!-- NAME FIELD -->
+  
           <div class="form-group">
             <label>Name *</label>
             <input
@@ -160,7 +160,7 @@ import { ContactService, Contact } from '../services/contactservice';
       color: #718096;
     }
 
-    /* ALERTS */
+   
     .alert {
       padding: 16px;
       border-radius: 10px;
@@ -248,7 +248,7 @@ import { ContactService, Contact } from '../services/contactservice';
       font-weight: 500;
     }
 
-    /* FORM ACTIONS */
+
     .form-actions {
       display: flex;
       gap: 12px;
@@ -297,7 +297,7 @@ import { ContactService, Contact } from '../services/contactservice';
       cursor: not-allowed;
     }
 
-    /* RESPONSIVE */
+  
     @media (max-width: 640px) {
       .form-card {
         padding: 24px;

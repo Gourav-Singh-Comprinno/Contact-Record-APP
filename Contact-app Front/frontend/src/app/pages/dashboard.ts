@@ -37,7 +37,7 @@ import { AuthService } from '../services/authservice';
 
     <div class="dashboard">
 
-      <!-- SIDEBAR -->
+     
       <aside class="sidebar">
         <div class="sidebar-content">
           <h5 class="sidebar-title"> My Profile</h5>
@@ -64,7 +64,7 @@ import { AuthService } from '../services/authservice';
         </div>
       </aside>
 
-      <!-- MAIN CONTENT -->
+   
       <main class="content">
         <div class="content-header">
           <div>
@@ -80,13 +80,13 @@ import { AuthService } from '../services/authservice';
           </button>
         </div>
 
-        <!-- LOADING -->
+        
         <div *ngIf="loading" class="loading-state">
           <div class="spinner"></div>
           <p>Loading contacts...</p>
         </div>
 
-        <!-- NO CONTACTS -->
+ 
         <div *ngIf="!loading && contacts.length === 0" class="empty-state">
           <div class="empty-icon"></div>
           <h3>No Contacts Yet</h3>
@@ -96,7 +96,6 @@ import { AuthService } from '../services/authservice';
           </button>
         </div>
 
-        <!-- CONTACT LIST -->
         <div *ngIf="!loading && contacts.length > 0" class="contacts-section">
           <div class="section-header">
             <h3 class="section-title">Your Contacts ({{ contacts.length }})</h3>
@@ -153,7 +152,6 @@ import { AuthService } from '../services/authservice';
             </div>
           </div>
 
-          <!-- PAGINATION CONTROLS -->
           <div class="pagination" *ngIf="totalPages > 1">
             <button 
               class="page-btn" 

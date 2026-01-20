@@ -25,7 +25,7 @@ import { RouterLink } from '@angular/router';
             Get Started
           </a>
 
-          <!-- Login → Login page -->
+        
           <a routerLink="/login"
              class="btn btn-outline-secondary btn-lg">
             Login

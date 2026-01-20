@@ -34,7 +34,7 @@ import { AuthService } from '../services/authservice';
             </span>
           </div>
 
-          <!-- Email Field (Read-only) -->
+          
           <div class="form-group">
             <label for="email">Email Address</label>
             <input
@@ -48,7 +48,7 @@ import { AuthService } from '../services/authservice';
             <small class="info-text"> Email address cannot be changed</small>
           </div>
 
-          <!-- Password Field (Optional) -->
+         
           <div class="form-group">
             <label for="password">New Password (Optional)</label>
             <input
@@ -78,7 +78,7 @@ import { AuthService } from '../services/authservice';
             <small class="info-text"> Leave blank if you don't want to change your password</small>
           </div>
 
-          <!-- Error/Success Messages -->
+ 
           <div class="message error-box" *ngIf="errorMessage">
             ❌ {{ errorMessage }}
           </div>
@@ -87,7 +87,7 @@ import { AuthService } from '../services/authservice';
             ✅ {{ successMessage }}
           </div>
 
-          <!-- Action Buttons -->
+        
           <div class="button-group">
             <button
               type="submit"
