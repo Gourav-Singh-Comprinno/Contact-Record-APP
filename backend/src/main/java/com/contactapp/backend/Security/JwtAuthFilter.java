@@ -26,9 +26,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                         path.startsWith("/v3/api-docs") ||
                         "OPTIONS".equalsIgnoreCase(request.getMethod());
 
-        System.out.println("JWT shouldNotFilter ");
-        System.out.println("Request URI: " + path);
-        System.out.println("Skip JWT Filter: " + skip);
+  
 
         return skip;
     }
@@ -42,7 +40,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
 
         String authHeader = request.getHeader("Authorization");
-        System.out.println("Authorization Header: " + authHeader);
+        
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
 
@@ -51,7 +49,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
             try {
                 Long userId = JwtUtil.extractUserId(token);
-                System.out.println("Token valid, extracted userId: " + userId);
+        
 
                 UsernamePasswordAuthenticationToken authentication =
                         new UsernamePasswordAuthenticationToken(
