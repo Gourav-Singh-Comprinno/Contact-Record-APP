@@ -80,11 +80,11 @@ import { AuthService } from '../services/authservice';
 
  
           <div class="message error-box" *ngIf="errorMessage">
-            ❌ {{ errorMessage }}
+             {{ errorMessage }}
           </div>
 
           <div class="message success-box" *ngIf="successMessage">
-            ✅ {{ successMessage }}
+             {{ successMessage }}
           </div>
 
         
@@ -310,7 +310,7 @@ import { AuthService } from '../services/authservice';
       cursor: not-allowed;
     }
 
-    /* Responsive */
+    
     @media (max-width: 768px) {
       .update-profile-card {
         padding: 30px 20px;

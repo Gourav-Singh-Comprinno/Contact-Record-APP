@@ -11,7 +11,7 @@ import { AuthService } from '../services/authservice';
   standalone: true,
   imports: [CommonModule, RouterLink, FormsModule],
   template: `
-    <!-- LOGOUT CONFIRMATION MODAL -->
+    
     <div class="modal-overlay" *ngIf="showLogoutModal" (click)="closeModal()">
       <div class="modal-content" (click)="$event.stopPropagation()">
         <div class="modal-icon">
@@ -194,7 +194,7 @@ import { AuthService } from '../services/authservice';
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* SIDEBAR */
+  
     .sidebar {
       width: 320px;
       background: white;
@@ -287,7 +287,6 @@ import { AuthService } from '../services/authservice';
       border-color: white;
     }
 
-    /* MAIN CONTENT */
     .content {
       flex: 1;
       padding: 40px;
@@ -338,7 +337,7 @@ import { AuthService } from '../services/authservice';
       transform: translateY(1px);
     }
 
-    /* LOADING STATE */
+    
     .loading-state {
       display: flex;
       flex-direction: column;
@@ -391,7 +390,7 @@ import { AuthService } from '../services/authservice';
       margin-bottom: 20px;
     }
 
-    /* CONTACTS SECTION */
+   
     .contacts-section {
       animation: fadeIn 0.3s ease;
     }
@@ -573,7 +572,7 @@ import { AuthService } from '../services/authservice';
       color: white;
     }
 
-    /* PAGINATION */
+   
     .pagination {
       display: flex;
       justify-content: center;
@@ -617,7 +616,7 @@ import { AuthService } from '../services/authservice';
       background: #f7fafc;
     }
 
-    /* SCROLLBAR */
+   
     .content::-webkit-scrollbar {
       width: 8px;
     }
@@ -652,7 +651,7 @@ import { AuthService } from '../services/authservice';
       background: #a0aec0;
     }
 
-    /* LOGOUT MODAL */
+   
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -759,7 +758,6 @@ import { AuthService } from '../services/authservice';
       box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
     }
 
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       .dashboard {
         flex-direction: column;
